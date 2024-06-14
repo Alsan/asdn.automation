@@ -1,0 +1,19 @@
+{
+  "Regions": {
+    "901": {
+      "RegionID": 901,
+      "RegionCode": "sz1",
+      "RegionName": "Shenzhen-1",
+      "Nodes": [
+        {
+          "Name": "901a",
+          "RegionID": 901,
+          "DERPPort": 443,
+          "HostName": "120.76.197.180",
+          "IPv4": "120.76.197.180",
+          "InsecureForTests": true
+        }
+      ]
+    }
+  }
+}
