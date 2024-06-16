@@ -1,0 +1,31 @@
+name: Deploy MinIO on Swarm
+
+on:
+  push:
+    braches:
+      - main
+  pull_request:
+
+jobs:
+  deploy-minio:
+    name: Deploy MinIO to Swarm
+    runs-on: [self-hosted]
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+
+      - name: Load Docker Compose File
+        run: |
+          echo "Loading Docker Compose for MinIO Deployment..."
+          docker compose -f docker-compose.yml config
+
+      - name: Deploy MinIO Stack
+        run: |
+          echo "Deploying MinIO on Swarm..."
+          docker stack deploy -c docker-compose.yml minio_stack
+
+      - name: Verify Deployment
+        run: |
+          echo "Verify MinIO Deployment..."
+          docker service ls | grep minio_stack
