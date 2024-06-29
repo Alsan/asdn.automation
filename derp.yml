@@ -9,3 +9,4 @@ regions:
         hostname: 120.76.197.180
         ipv4: 120.76.197.180
         derport: 443
+        insecureForTest: true
