@@ -1,16 +1,16 @@
 {
   "Regions": {
-    "0": {
-      "RegionID": 0,
-      "RegionCode": "sz1",
-      "RegionName": "Shenzhen-1",
+    "901": {
+      "RegionID": 901,
+      "RegionCode": "ch4",
+      "RegionName": "ch4",
       "Nodes": [
         {
-          "Name": "0a",
-          "RegionID": 0,
-          "DERPPort": 443,
-          "HostName": "120.76.197.180",
-          "IPv4": "120.76.197.180",
+          "Name": "901h",
+          "RegionID": 901,
+          "DERPPort": 8443,
+          "HostName": "ch4.asdn.net",
+          "IPv4": "38.54.94.94",
           "InsecureForTests": true
         }
       ]
