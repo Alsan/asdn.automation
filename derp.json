@@ -9,9 +9,9 @@
           "Name": "901h",
           "RegionID": 901,
           "DERPPort": 8443,
-          "HostName": "ch4.asdn.net",
+          "HostName": "ch4-alsan-nvpc.duckdns.org",
           "IPv4": "38.54.94.94",
-          "InsecureForTests": true
+          "InsecureForTests": false
         }
       ]
     }
